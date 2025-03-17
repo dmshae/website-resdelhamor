@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recidencia Del Hamor | Contact</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+        <!-- Navbar -->
+        <nav class="bg-gradient-to-b from-cyan-950 to-slate-500 p-4 shadow-md border-b-2 border-slate-600">
+            <div class="container mx-auto flex justify-between items-center">
+
+                <!-- Logo and Name -->
+                <div class="flex items-center space-x-3">
+                    <img src="images/rdh-logo.webp" alt="Logo" class="h-10 w-auto">
+                    <div class="text-lg font-bold text-white">Recidencia Del Hamor</div>
+                </div>
+
+                <!-- Desktop Links -->
+                <div class="space-x-8 hidden md:flex">
+                    <a href="homepage.html" class="text-white hover:text-blue-300">Home</a>
+                    <a href="accomodations.html" class="text-white hover:text-blue-300">Accomodations</a>
+                    <a href="amenities.html" class="text-white hover:text-blue-300">Amenities</a>
+                    <a href="booking.html" class="text-white hover:text-blue-300">Booking</a>
+                    <a href="contact.html" class="text-blue-300 hover:text-blue-300">Contact</a>
+                </div>
+
+                <!-- Mobile Navbar (Toggle Button) -->
+           <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white">
+                ☰
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="md:hidden hidden bg-slate-500 p-6 space-x-2 text-center">
+    <a href="homepage.html" class="text-white">Home</a>
+    <a href="accomodations.html" class="text-white">Accomodations</a>
+    <a href="amenities.html" class="text-white">Amenities</a>
+    <a href="booking.html" class="text-white">Booking</a>
+    <a href="contact.html" class="text-blue-100">Contact</a>
+</div>
+
+        <!-- Contact Info Section -->
+        <div class="bg-gradient-to-b from-slate-500 to-teal-200 py-8">
+            <section>
+                <div class="container mx-auto px-4 text-center">
+                    <h2 class="text-4xl sm:text-5xl font-semibold mb-6 text-white">Contact Us</h2>
+                    <p class="text-lg text-white mb-12">Feel free to get in touch with us for any queries.</p>
+
+                    <!-- Four Boxes -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                        <!-- Box 1 -->
+                        <div class="flex flex-col items-center bg-neutral-500 text-white p-6 rounded-lg shadow-2xl">
+                            <i class="fas fa-phone-alt text-4xl mb-4"></i>
+                            <p class="text-xl">0906 361 9592</p>
+                        </div>
+
+                        <!-- Box 2 -->
+                        <div class="flex flex-col items-center bg-neutral-500 text-white p-6 rounded-lg shadow-2xl">
+                            <div class="flex space-x-4 mb-4">
+                                <a href="https://www.facebook.com/recidenciadelhamor/" target="_blank" class="text-white hover:text-gray-200" aria-label="Visit our Facebook page">
+                                    <i class="fab fa-facebook text-4xl"></i>
+                                </a>
+                                <a href="https://www.instagram.com/recidenciadelhamor/" target="_blank" class="text-white hover:text-gray-200" aria-label="Follow us on Instagram">
+                                    <i class="fab fa-instagram text-4xl"></i>
+                                </a>                                
+                            </div>
+                            <p class="text-xl">Social Media</p>
+                        </div>
+
+                        <!-- Box 3 -->
+                        <div class="flex flex-col items-center bg-neutral-500 text-white p-6 rounded-lg shadow-2xl">
+                            <i class="fas fa-clock text-4xl mb-4"></i>
+                            <p class="text-xl">Always Open</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Us Section -->
+        <section class="bg-gradient-to-b from-slate-100 to-gray-300 py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                    <!-- Google Map -->
+                    <div>
+                        <h3 class="text-2xl sm:text-3xl font-semibold mt-5 mb-7">Location Map</h3>
+                        <p class="text-lg mb-7">Address: Inlagadian, Casiguran, Sorsogon, Philippines, 4702</p>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.548092638435!2d124.05541477507364!3d12.807819087492682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a0c3dbd04100cd%3A0x49e1dceb30915b6f!2sResidencia%20Del%20Hamor!5e0!3m2!1sen!2sph!4v1741760335698!5m2!1sen!2sph" 
+                            width="100%" 
+                            height="350" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            title="Google Maps location of Residencia Del Hamor">
+                        </iframe>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div>
+                        <form id="contactForm" onsubmit="handleSubmit(event)" class="bg-gray-100 p-6 rounded-lg drop-shadow-2xl">
+                            <h2 class="text-3xl font-semibold mb-6 text-center text-blue-900">Contact Form</h2>
+                            <p class="text-lg mb-8 text-center">We would love to hear from you! Kindly fill out this form.</p>
+
+                            <!-- Full Name -->
+                            <div class="mb-4">
+                                <label for="fullname" class="block text-lg font-medium text-gray-700">Full Name</label>
+                                <input type="text" id="fullname" name="fullname" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg" required oninput="checkInput(this)">
+                            </div>
+
+                            <!-- Email -->
+                            <div class="mb-4">
+                                <label for="email" class="block text-lg font-medium text-gray-700">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg" required oninput="checkInput(this)">
+                            </div>
+
+                            <!-- Message -->
+                            <div class="mb-4">
+                                <label for="message" class="block text-lg font-medium text-gray-700">Message</label>
+                                <textarea id="message" name="message" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg" rows="7" required oninput="checkInput(this)"></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="flex justify-center">
+                                <button type="submit" class="w-30 py-2 px-6 bg-blue-900 text-white text-lg font-semibold rounded-3xl hover:bg-blue-800 cursor-pointer">
+                                    Submit
+                                </button>   
+                            </div>
+                        </form>
+                    </div>  
+                </div>
+            </div>
+        </section>
+
+        <!-- Confirmation Modal -->
+        <div id="confirmationModal" class="fixed inset-0 items-center justify-center z-50 hidden">
+            <div id="overlay" class="fixed inset-0 bg-black/30 backdrop-blur-xs z-40"></div>
+            <div class="bg-white rounded-lg p-8 w-full max-w-sm z-50 relative shadow-2xl">
+                <h3 class="text-2xl font-bold text-center text-blue-900 mb-3">Message Sent!</h3>
+                <div class="w-full h-0.5 bg-gray-300 mb-4"></div>
+                <p class="text-lg text-center mb-6">We will get back to you soon.</p>
+                <div class="flex justify-center">
+                    <button onclick="closeModal()" class="px-6 py-2 font-semibold bg-blue-900 text-white rounded-lg hover:bg-blue-800 cursor-pointer shadow-md">
+                         OK
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Error Modal -->
+        <div id="errorModal" class="fixed inset-0 items-center justify-center z-50 hidden">
+            <div id="overlay" class="fixed inset-0 bg-black/30 backdrop-blur-xs z-40"></div>
+            <div class="bg-white rounded-lg p-8 w-full max-w-sm z-50 relative shadow-2xl">
+                <h3 class="text-xl font-semibold text-center text-red-800 mb-4">ERROR(S)</h3>
+                <ul id="errorMessages" class="list-disc pl-5 mb-8 text-black">
+                    <!-- Error messages will appear here -->
+                </ul>
+                <div class="flex justify-center">
+                    <button onclick="closeErrorModal()" class="px-6 py-2 font-semibold bg-red-800 text-white rounded-lg hover:bg-red-700 cursor-pointer">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const currentPage = window.location.pathname.split("/").pop();
+            const links = document.querySelectorAll("a");
+            links.forEach(link => {
+                const page = link.getAttribute("href").split("/").pop();
+                if (page === currentPage) {
+                    link.classList.add("font-bold");
+                }
+            });
+
+            function restrictInputToLetters(input) {
+                if (input.id === "fullname") {
+                    input.value = input.value.replace(/[^A-Za-z\s\.\-]/g, '');
+                    input.value = input.value
+                        .split(' ')
+                        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()) 
+                        .join(' ');
+                }
+                if (input.id === "email") {
+                    input.value = input.value.toLowerCase(); 
+                }
+            }
+
+            function checkInput(input) {
+                restrictInputToLetters(input);
+                if (input.value.trim() !== "") {    
+                    input.classList.add("border-blue-200", "border-2");
+                    input.classList.remove("border-gray-300");
+                } else {
+                    input.classList.remove("border-gray-300", "border-2");
+                    input.classList.add("border-blue-200");
+                }
+            }
+
+            function handleSubmit(event) {
+                event.preventDefault();
+                const fullname = document.getElementById('fullname').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const message = document.getElementById('message').value.trim();
+
+                const fullnameInput = document.getElementById('fullname');
+                const emailInput = document.getElementById('email');
+                const messageInput = document.getElementById('message');
+
+                const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3,}$/;
+                const fullnamePattern = /^[A-Za-z]+(?:[\s.'-][A-Za-z]+)+$/;
+
+                fullnameInput.classList.remove('border-red-500');
+                emailInput.classList.remove('border-red-500');
+                messageInput.classList.remove('border-red-500');
+                fullnameInput.classList.remove('border-green-500', 'border-2');
+                emailInput.classList.remove('border-green-500', 'border-2');
+                messageInput.classList.remove('border-green-500', 'border-2');
+                fullnameInput.classList.add('border-gray-300');
+                emailInput.classList.add('border-gray-300');
+                messageInput.classList.add('border-gray-300');
+
+                let errors = []; 
+
+                if (!fullname || !email || !message) {
+                    errors.push('Please fill out all fields!');
+                }
+
+                if (!fullnamePattern.test(fullname)) {
+                    errors.push('Enter your first and last name.');
+                    fullnameInput.classList.add('border-red-500', 'border-2');
+                }
+
+                if (!email.includes('@') || email.split('@').length < 2) {
+                    emailInput.classList.add('border-red-500');
+                }
+
+                if (!email.endsWith('.com')) {
+                    errors.push("Email address should end with '.com'.");
+                    emailInput.classList.add('border-red-500', 'border-2');
+                }
+
+                if (errors.length > 0) {
+                    showErrorModal(errors);
+                } else {
+                    const confirmationModal = document.getElementById("confirmationModal");
+                    confirmationModal.classList.remove("hidden");
+                    confirmationModal.classList.add("flex");
+                    document.getElementById("contactForm").reset();
+                }
+            }
+
+            function showErrorModal(errors) {
+                const errorModal = document.getElementById("errorModal");
+                const errorMessagesContainer = document.getElementById("errorMessages");
+
+                errorMessagesContainer.innerHTML = "";
+                errors.forEach((error) => {
+                    const li = document.createElement("li");
+                    li.textContent = error;
+                    errorMessagesContainer.appendChild(li);
+                });
+
+                errorModal.classList.remove("hidden");
+                errorModal.classList.add("flex");
+            }
+
+            function closeErrorModal() {
+                const errorModal = document.getElementById("errorModal");
+                errorModal.classList.add("hidden");
+                errorModal.classList.remove("flex");
+            }
+
+            function closeModal() {
+                const confirmationModal = document.getElementById("confirmationModal");
+                const overlay = document.getElementById("overlay");
+
+                confirmationModal.classList.add("hidden");
+                confirmationModal.classList.remove("flex");
+
+                overlay.classList.add("hidden");
+                overlay.classList.remove("flex");
+            }
+
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            });
+
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recidencia Del Hamor | Booking</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-b from-cyan-950 to-slate-500 p-4 shadow-md border-b-2 border-slate-600">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo and Name -->
+            <div class="flex items-center space-x-3">
+                <img src="images/rdh-logo.webp" alt="Logo" class="h-10 w-auto">
+                <div class="text-lg font-bold text-white">Recidencia Del Hamor</div>
+            </div>
+            <!-- Desktop -->
+            <div class="space-x-8 hidden md:flex">
+                <a href="homepage.html" class="text-white hover:text-blue-300">Home</a>
+                <a href="accomodations.html" class="text-white hover:text-blue-300">Accomodations</a>
+                <a href="amenities.html" class="text-white hover:text-blue-300">Amenities</a>
+                <a href="booking.html" class="text-blue-300 hover:text-blue-300">Booking</a>
+                <a href="contact.html" class="text-white hover:text-blue-300">Contact</a>
+            </div>
+        
+        <!-- Mobile Navbar (Toggle Button) -->
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white">
+                ☰
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="md:hidden hidden bg-slate-500 p-6 space-x-2 text-center">
+    <a href="homepage.html" class="text-white">Home</a>
+    <a href="accomodations.html" class="text-white">Accomodations</a>
+    <a href="amenities.html" class="text-white">Amenities</a>
+    <a href="booking.html" class="text-blue-100">Booking</a>
+    <a href="contact.html" class="text-white">Contact</a>
+</div>
+
+    <!-- Message with Blurred Background -->
+    <section class="relative bg-cover bg-center bg-no-repeat w-full overflow-hidden" style="background-image: url('images/pc1.webp');">
+        <div class="absolute inset-0 bg-black/20 backdrop-blur-xs"></div>
+        <div class="flex items-center justify-center w-full py-18 flex-col md:flex-row">
+            <!-- Message Section (Left Side) -->
+            <div class="relative max-w-lg w-full rounded-sm bg-black/30 backdrop-blur-none p-8 shadow-xl z-20 flex flex-col justify-center text-center md:text-left">
+                <h2 class="text-5xl font-bold mb-10 text-white">MAKE YOUR RESERVATION</h2>
+                <div class="w-full h-0.5 bg-gray-200"></div>
+                <p class="text-lg font-normal text-white mt-8">Experience the best accommodations and enjoy a relaxing stay with us.</p>
+            </div>
+
+            <!-- Booking Form (Right Side) -->
+            <div class="relative max-w-lg w-full rounded-sm bg-white p-8 shadow-xl z-20 flex flex-col justify-between md:mt-0">
+                <form id="bookingForm" onsubmit="handleSubmit(event)">
+                    <h3 class="text-3xl font-semibold text-center mb-10 text-cyan-800">Booking Form</h3>
+                
+                    <!-- First Name and Last Name -->
+                    <div class="mb-4 flex flex-col md:flex-row md:space-x-4">
+                        <div class="w-full md:w-1/2">
+                            <label for="firstname" class="block text-lg font-medium text-gray-700">First Name</label>
+                            <input type="text" id="firstname" name="firstname" class="mt-2 w-full rounded-lg border border-gray-300 px-4 py-2" required autocomplete="given-name" oninput="checkInput(this)" minlength="2" pattern="[A-Za-z]+" />
+                            <p id="firstname-error" class="text-red-500 text-sm mt-2 hidden">Must be at least 2 characters long.</p>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <label for="lastname" class="block text-lg font-medium text-gray-700">Last Name</label>
+                            <input type="text" id="lastname" name="lastname" class="mt-2 w-full rounded-lg border border-gray-300 px-4 py-2" required autocomplete="family-name" oninput="checkInput(this)" minlength="2" pattern="[A-Za-z]+" />
+                            <p id="lastname-error" class="text-red-500 text-sm mt-2 hidden">Must be at least 3 characters long.</p>
+                        </div>
+                    </div>
+                
+                    <!-- Contact -->
+                    <div class="mb-4">
+                        <label for="contact" class="block text-lg font-medium text-gray-700">Contact Number</label>
+                        <input type="text" id="contact" name="contact" class="mt-2 w-full rounded-lg border border-gray-300 px-4 py-2" required autocomplete="tel" oninput="checkContactInput(this)" maxlength="11"/>
+                        <p id="contact-error" class="text-red-500 text-sm mt-2 hidden">Enter a valid contact number (11 digits).</p>
+                    </div>
+                
+                    <!-- Email -->
+                    <div class="mb-4">
+                        <label for="email" class="block text-lg font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" class="mt-2 w-full rounded-lg border border-gray-300 px-4 py-2" required autocomplete="email" oninput="checkEmailInput(this)" />
+                        <p id="email-error" class="text-red-500 text-sm mt-2 hidden">Enter a valid email address.</p>
+                    </div>
+                
+                    <!-- Check In and Check Out Date -->
+                    <div class="mb-4 flex flex-col md:flex-row md:space-x-4">
+                        <div class="w-full md:w-1/2">
+                            <label for="checkin" class="block text-lg font-medium text-gray-700">Check-in Date</label>
+                            <input type="date" id="checkin" name="checkin" class="mt-2 w-full rounded-lg border border-gray-300 px-4 py-2" required autocomplete="checkin" oninput="checkInput(this)"/>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <label for="checkout" class="block text-lg font-medium text-gray-700">Check-out Date</label>
+                            <input type="date" id="checkout" name="checkout" class="mt-2 w-full rounded-lg border border-gray-300 px-4 py-2" required autocomplete="checkout" oninput="checkInput(this)" />
+                        </div>
+                    </div>
+                
+                    <!-- Room Selection -->
+                    <div class="mb-4 flex flex-col md:flex-row md:space-x-4">
+                        <div class="w-full md:w-1/2">
+                            <label for="room" class="block text-lg font-medium text-gray-700">Room Selection</label>
+                            <select id="room" name="room" class="mt-2 w-full rounded-lg border border-gray-300 px-4 py-2" required autocomplete="room" oninput="checkInput(this)">
+                                <option value="" disabled selected>Select a room</option>
+                                <option value="deluxe-villa">Deluxe Villa</option>
+                                <option value="duplex-villa">Duplex Villa</option>
+                                <option value="duplex-villa-pool">Duplex Villa Private Pool</option>
+                                <option value="panoramic-duplex">Panoramic Duplex Villa</option>
+                                <option value="standard-villa">Standard Villa</option>
+                                <option value="suite">Suite Room</option>
+                            </select>
+                        </div>
+                
+                        <!-- Room Numbers -->
+                        <div class="w-full md:w-1/2">
+                            <label for="roomNumbers" class="block text-lg font-medium text-gray-700">Number of Rooms</label>
+                            <input type="number" id="roomNumbers" name="roomNumbers"
+                                class="mt-2 w-full rounded-lg border border-gray-300 px-4 py-2"
+                                required
+                                min="1"
+                                value="1"
+                                oninput="this.value = this.value.replace(/[^0-9]/g, ''); checkInput(this)"
+                                placeholder="1"
+                                autocomplete="off"
+                            />
+                        </div>
+                    </div>
+                
+                    <!-- Adults and Children -->
+                    <div class="mb-4 flex flex-col md:flex-row md:space-x-4">
+                        <div class="w-full md:w-1/2">
+                            <label for="adults" class="block text-lg font-medium text-gray-700">Adults</label>
+                            <input type="number" id="adults" name="adults"
+                                class="mt-2 w-full rounded-lg border border-gray-300 px-4 py-2"
+                                required
+                                min="1"
+                                oninput="this.value = this.value.replace(/[^0-9]/g, ''); checkInput(this)"
+                                value="1"
+                                autocomplete="off"
+                            />
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <label for="children" class="block text-lg font-medium text-gray-700">Children</label>
+                            <input type="number" id="children" name="children"
+                                class="mt-2 w-full rounded-lg border border-gray-300 px-4 py-2"
+                                oninput="this.value = this.value.replace(/[^0-9]/g, ''); checkInput(this)"
+                                value="0"
+                                autocomplete="off"
+                            />
+                        </div>
+                    </div>
+                
+                    <!-- Submit Button -->
+                    <div class="flex justify-center">
+                        <button type="submit" class="cursor-pointer rounded-lg bg-cyan-800 px-6 py-2 text-lg mt-5 font-semibold text-white hover:bg-cyan-700">
+                            Book Now
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="fixed inset-0 items-center justify-center z-50 hidden">
+        <div id="overlay" class="fixed inset-0 bg-black/30 backdrop-blur-xs z-40"></div>
+        <div class="bg-white rounded-lg p-8 w-100 z-50 max-w-sm relative shadow-2xl">
+            <h3 class="text-2xl font-bold text-center text-cyan-900 mb-3">Booking Submitted!</h3>
+            <div class="w-full h-0.5 bg-gray-300 mb-4"></div>
+            <p class="text-lg text-center mb-6">We'll review your details and send a confirmation email.</p>
+            <div class="flex justify-center">
+                <button onclick="closeModal()" class="px-6 py-2 font-semibold bg-cyan-900 text-white rounded-lg hover:bg-cyan-800 cursor-pointer">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div id="errorModal" class="fixed inset-0 items-center justify-center z-50 hidden">
+        <div id="overlay" class="fixed inset-0 bg-black/30 backdrop-blur-xs z-40"></div>
+        <div class="bg-white rounded-lg p-8 w-100 z-50 max-w-sm relative shadow-2xl">
+            <h3 class="text-xl font-semibold text-center text-red-800 mb-3">ERROR(S)</h3>
+            <ul id="errorMessages" class="list-disc pl-5 mb-8 text-black">
+                <!-- Error messages -->
+            </ul>
+            <div class="flex justify-center">
+                <button onclick="closeErrorModal()" class="px-6 py-2 font-semibold bg-red-800 text-white rounded-lg hover:bg-red-700 cursor-pointer">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+        <script>
+        const currentPage = window.location.pathname.split("/").pop();
+            
+            const links = document.querySelectorAll("a");
+            links.forEach(link => {
+                const page = link.getAttribute("href").split("/").pop();
+                if (page === currentPage) {
+                    link.classList.add("font-bold");
+                }
+            });
+
+            function restrictInputToLetters(input) {
+                if (input.id === "firstname" || input.id === "lastname") {
+                    input.value = input.value.replace(/[^A-Za-z\s\-]/g, '');
+                    input.value = input.value.charAt(0).toUpperCase() + input.value.slice(1).toLowerCase();
+                }
+
+                if (input.id === "email") {
+                    input.value = input.value.toLowerCase(); 
+                }
+            }
+
+            function checkInput(input) {
+                restrictInputToLetters(input);  
+                
+                const errorId = `${input.id}-error`;
+                const errorMessage = document.getElementById(errorId);
+                let valid = true;  
+                
+                if ((input.id === "firstname" || input.id === "lastname") && input.value.length < 2) {
+                    valid = false;
+                    errorMessage.textContent = "Must be at least 2 characters long.";
+                    errorMessage.classList.remove("hidden");
+                }
+
+                if (valid) {
+                    input.classList.remove("border-red-500", "border-2");
+                    input.classList.add("border-green-500", "border-2");
+                    errorMessage.classList.add("hidden");
+                } else {
+                    input.classList.add("border-red-500", "border-2");
+                    input.classList.remove("border-green-500");
+                    errorMessage.classList.remove("hidden");
+                }
+
+                return valid;
+            }
+
+            function checkContactInput(input) {
+                input.value = input.value.replace(/[^0-9]/g, '');
+                const errorMessage = document.getElementById('contact-error');
+
+                if (input.value.length !== 11) {
+                    errorMessage.classList.remove("hidden");
+                    input.classList.add("border-red-500", "border-2");
+                    input.classList.remove("border-green-500");
+                } else {
+                    errorMessage.classList.add("hidden");
+                    input.classList.remove("border-red-500");
+                    input.classList.add("border-green-500", "border-2");
+                }         
+                return input.value.length === 11;
+            }
+
+            function checkEmailInput(input) {
+                const errorMessage = document.getElementById('email-error');
+                input.value = input.value.toLowerCase();
+                const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+                if (!emailRegex.test(input.value) || !input.value.endsWith(".com")) {  
+                    errorMessage.classList.remove("hidden");
+                    input.classList.add("border-red-500", "border-2");
+                    input.classList.remove("border-green-500");
+                } else {
+                    errorMessage.classList.add("hidden");
+                    input.classList.remove("border-red-500");
+                    input.classList.add("border-green-500", "border-2");
+                }
+                return emailRegex.test(input.value) && input.value.endsWith(".com");
+            }
+
+            function handleSubmit(event) {
+                event.preventDefault();
+
+                const form = event.target;
+                const firstname = form.firstname.value.trim();
+                const lastname = form.lastname.value.trim();
+                const contact = form.contact.value.trim();
+                const email = form.email.value.trim();
+                const checkin = form.checkin.value;
+                const checkout = form.checkout.value;
+                const roomNumbers = form.roomNumbers.value;
+                const adults = form.adults.value;
+                const children = form.children.value;
+
+                let errors = [];
+
+                if (!firstname || !lastname || !contact || !email || !checkin || !checkout || !roomNumbers || !adults) {
+                    errors.push("Please fill in all required fields.");
+                }
+
+                if (firstname.length < 2) {
+                    errors.push("First name must be at least 2 characters long.");
+                }
+
+                if (lastname.length < 2) {
+                    errors.push("Last name must be at least 2 characters long.");
+                }
+
+                if (!checkContactInput(form.contact)) {
+                    errors.push("Contact number must be exactly 11 digits.");
+                }
+
+                if (!checkEmailInput(form.email)) {
+                    errors.push("Email address should end with '.com'.");
+                }   
+
+                if (new Date(checkin) >= new Date(checkout)) {
+                    errors.push("Check-out date must be later than check-in date.");
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+
+                const checkinDate = new Date(checkin);
+                const checkoutDate = new Date(checkout);
+
+                if (checkinDate < today || checkoutDate < today) {
+                    errors.push("Please select future dates for check-in and check-out.");
+                }
+
+                if (errors.length > 0) {
+                    showErrorModal(errors); 
+                } else {
+                    const confirmationModal = document.getElementById("confirmationModal");
+                    confirmationModal.classList.remove("hidden");
+                    confirmationModal.classList.add("flex");
+                    document.getElementById("overlay").classList.remove("hidden");
+
+                    form.reset();
+                    resetBorderColors(); 
+                }
+            }
+
+            function resetBorderColors() {
+                const inputs = document.querySelectorAll('input, select');
+                inputs.forEach(input => {
+                    input.classList.remove("border-green-500", "border-2");
+                    input.classList.add("border-gray-300");
+                })
+            }
+
+            function showErrorModal(errors) {
+                const errorModal = document.getElementById("errorModal");
+                const errorMessagesContainer = document.getElementById("errorMessages");
+
+                errorMessagesContainer.innerHTML = '';
+
+                errors.forEach(error => {
+                    const li = document.createElement("li");
+                    li.textContent = error; 
+                    errorMessagesContainer.appendChild(li);
+                });
+
+                errorModal.classList.remove("hidden");
+                errorModal.classList.add("flex");   
+            }
+
+            function closeErrorModal() {
+                const errorModal = document.getElementById("errorModal");
+
+                errorModal.classList.add("hidden");
+                errorModal.classList.remove("flex");
+            }
+
+            function closeModal() {
+                const confirmationModal = document.getElementById("confirmationModal");
+                confirmationModal.classList.add("hidden");
+                confirmationModal.classList.remove("flex");
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                const todayString = today.toISOString().split('T')[0];
+
+            document.getElementById('checkin').setAttribute('min', todayString);
+
+            document.getElementById('checkin').addEventListener('change', function() {
+                    const selectedCheckinDate = new Date(this.value);
+                    const nextDay = new Date(selectedCheckinDate);
+                    nextDay.setDate(nextDay.getDate() + 1);
+                    const nextDayString = nextDay.toISOString().split('T')[0];
+
+                document.getElementById('checkout').setAttribute('min', nextDayString);
+
+                const currentCheckout = new Date(document.getElementById('checkout').value);
+                if (currentCheckout <= selectedCheckinDate) {
+                    document.getElementById('checkout').value = nextDayString;
+                }
+            });
+
+            document.getElementById('checkout').setAttribute('min', todayString);
+        });
+
+        // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            });
+
+    </script>
+        
+</body>
+</html>
