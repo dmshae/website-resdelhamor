@@ -5,48 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recidencia Del Hamor | Home</title>
     <link href="./output.css" rel="stylesheet">
-    <style>
-        @keyframes wave {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        .wave-container {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 10;
-            overflow: hidden;
-        }
-
-        .wave-path-wrapper {
-            display: flex;
-            width: 200%;
-            animation: wave 8s linear infinite;
-        }
-
-        .wave-path {
-            flex-shrink: 0;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        section {
-            position: relative;
-            height: 100vh;
-            background-image: url('images/pc2.webp');
-            background-size: cover;
-            background-position: center 68%;
-        }
-    </style>
 </head>
 
 <body>
@@ -89,36 +47,22 @@
     </div>
 
     <!-- Hero Section -->
-    <section id="home">
-        <div class="wave-container bg-transparent">
-            <div class="wave-path-wrapper">
-                <svg class="w-1/2 flex-shrink-0" height="200" preserveAspectRatio="none" viewBox="0 0 1440 200" fill="rgba(173, 216, 230, 0.6)">
-                    <path class="wave-path" d="M0 0 C 150 100, 250 100, 400 50 C 550 0, 650 0, 800 50 C 950 100, 1050 100, 1200 50 C 1350 0, 1440 0, 1440 0 L 1440 200 L 0 200 Z"></path>
-                </svg>
-                <svg class="w-1/2 flex-shrink-0" height="200" preserveAspectRatio="none" viewBox="0 0 1440 200" fill="rgba(173, 216, 230, 0.6)">
-                    <path class="wave-path" d="M0 0 C 150 100, 250 100, 400 50 C 550 0, 650 0, 800 50 C 950 100, 1050 100, 1200 50 C 1350 0, 1440 0, 1440 0 L 1440 200 L 0 200 Z"></path>
-                </svg>
-            </div>
-        </div>
-
+    <section id="home" class="relative h-screen bg-cover bg-center" style="background-image: url('images/pc2.webp');">
+        
         <!-- Hero Content -->
-        <div class="text-white relative z-20 pt-8 px-4 sm:px-6 md:px-8">
-            <h1 class="text-3xl sm:text-4xl md:text-2xl lg:text-4xl xl:text-4xl mb-6 font-bold w-full text-center sm:text-left"
-                style="text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);">
-                Where Luxury Meets Nature, Every Moment is a Beautiful Escape.
-            </h1>
-
-            <div class="flex justify-center md:justify-between items-center flex-col md:flex-row">
-                <p class="text-lg sm:text-xl mt-4 sm:mt-6 md:mt-68 font-normal text-white p-4 shadow-xl text-justify w-full md:w-1/2"
-                    style="text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);">
-                    <span class="bg-[rgba(9,8,8,0.5)] p-0.5 rounded-lg">
-                        Discover the ultimate escape at Recidencia del Hamor, where serenity and luxury blend seamlessly in the heart of Sorsogon.
-                        Whether you're seeking relaxation or adventure, our resort promises an unforgettable getaway where every moment feels like a dream. 
-                    </span>
-                </p>
-
-                <a href="booking.html" class="bg-cyan-800 text-white py-3 sm:py-6 px-8 sm:px-12 mt-8 md:mt-60 rounded-lg text-2xl font-bold hover:bg-cyan-700 transition-colors duration-300 border-2 border-white">
-                    Book Now
+         <div class="text-white relative z-20 pt-8 px-4 sm:px-6 md:px-8 min-h-screen flex justify-center items-center">
+            <div class="flex justify-center items-center flex-col gap-8 text-center">
+                
+                <!-- Hero Heading -->
+                 <h1 id="hero-heading" class="text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl mb-6 mt-4 font-bold bg-black/50 backdrop-blur-md text-white px-2 py-1 opacity-0 transition-opacity duration-2000 ease-in-out"
+                    style="text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);">
+                        Where Luxury Meets Nature, Every Moment is a Beautiful Escape.
+                </h1>
+                
+                <!-- Button -->
+                <a id="cta-button" href="booking.html" 
+                    class="bg-cyan-800 border-2 border-white text-white py-3 sm:py-6 px-8 sm:px-12 mt-4 sm:mt-4 md:mt-6 rounded-lg text-2xl font-bold hover:bg-cyan-700 transition-colors duration-200 opacity-0">
+                        Book Now
                 </a>
             </div>
         </div>
@@ -126,68 +70,67 @@
     
     <!-- Image Gallery -->
     <div class="image-gallery py-16 bg-gradient-to-b from-cyan-900 to-slate-200">
-    <div class="container mx-auto px-4">
-        <!-- Grid layout will adjust based on screen size -->
-        <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+        <div class="container mx-auto px-4">
+            <!-- Grid layout will adjust based on screen size -->
+            <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6">
 
-            <div class="col-span-3 text-center mt-4 mb-4">
-                <h2 class="text-3xl sm:text-2xl font-bold text-white"> A Sneak Peek Into Our Paradise </h2>
-            </div>
-
-            <!-- 1st row -->
-            <div class="group relative">
-                <img src="images/pc8.webp" alt="Image 1" class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105 cursor-pointer gallery-item" data-src="images/pc8.webp">
-            </div>
-            <div class="group relative">
-                <img src="images/pc4.webp" alt="Image 2" class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105 cursor-pointer gallery-item" data-src="images/pc4.webp">
-            </div>
-            <div class="group relative">
-                <img src="images/pc6.webp" alt="Image 3" class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105 cursor-pointer gallery-item" data-src="images/pc6.webp">
-            </div>
-            
-            <!-- 2nd row -->
-            <div class="group relative">
-                <img src="images/pc16.webp" alt="Image 4" class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105 cursor-pointer gallery-item" data-src="images/pc16.webp">
-            </div>
-            <div class="group relative">
-                <img src="images/pc9.webp" alt="Image 5" class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105 cursor-pointer gallery-item" data-src="images/pc9.webp">
-            </div>
-            <div class="group relative">
-                <img src="images/pc13.webp" alt="Image 6" class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105 cursor-pointer gallery-item" data-src="images/pc13.webp">
-            </div>
-
-            <!-- 3rd row -->
-            <div class="group relative">
-                <img src="images/pc7.webp" alt="Image 7" class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105 cursor-pointer gallery-item" data-src="images/pc7.webp">
-            </div>
-            <div class="group relative">
-                <img src="images/pc10.webp" alt="Image 8" class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105 cursor-pointer gallery-item" data-src="images/pc10.webp">
-            </div>
-            <div class="group relative">
-                <img src="images/pc11.webp" alt="Image 9" class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105 cursor-pointer gallery-item" data-src="images/pc11.webp">
-            </div>
-        </div>
-
-        <div class="col-span-3 text-center mt-12 mb-4">
-            <h2 class="text-xl sm:text-lg font-bold text-gray-600"> Want to discover more?</h2>
-        </div>
-
-        <div class="col-span-3 text-center">
-            <h3 class="text-md sm:text-md font-semibold text-gray-600">
-                Visit our <a href="accomodations.html" class="text-blue-800 underline">Accomodations</a> and <a href="amenities.html" class="text-blue-800 underline">Amenities</a>.
-            </h3>
-        </div>
-    </div>
-    </div>
-
-            <!-- Footer Section -->
-            <footer class="bg-gray-800 text-white py-8">
-                <div class="container mx-auto px-4 text-center">
-                    <p class="text-white font-semibold text-sm">&copy; 2025 Recidencia Del Hamor. All rights reserved.</p>
-                    <p class="text-white text-sm mt-2"> Website Developed by Shaina Mae D. Miras </p>
+                <div class="col-span-3 text-center mt-4 mb-4">
+                    <h2 class="text-3xl sm:text-2xl font-bold text-white"> A Sneak Peek Into Our Paradise </h2>
                 </div>
-            </footer>
 
+                <!-- 1st row -->
+                <div class="group relative">
+                    <img src="images/pc8.webp" alt="Image 1" class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105 cursor-pointer gallery-item" data-src="images/pc8.webp">
+                </div>
+                <div class="group relative">
+                    <img src="images/pc4.webp" alt="Image 2" class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105 cursor-pointer gallery-item" data-src="images/pc4.webp">
+                </div>
+                <div class="group relative">
+                    <img src="images/pc6.webp" alt="Image 3" class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105 cursor-pointer gallery-item" data-src="images/pc6.webp">
+                </div>
+                
+                <!-- 2nd row -->
+                <div class="group relative">
+                    <img src="images/pc16.webp" alt="Image 4" class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105 cursor-pointer gallery-item" data-src="images/pc16.webp">
+                </div>
+                <div class="group relative">
+                    <img src="images/pc9.webp" alt="Image 5" class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105 cursor-pointer gallery-item" data-src="images/pc9.webp">
+                </div>
+                <div class="group relative">
+                    <img src="images/pc13.webp" alt="Image 6" class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105 cursor-pointer gallery-item" data-src="images/pc13.webp">
+                </div>
+
+                <!-- 3rd row -->
+                <div class="group relative">
+                    <img src="images/pc7.webp" alt="Image 7" class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105 cursor-pointer gallery-item" data-src="images/pc7.webp">
+                </div>
+                <div class="group relative">
+                    <img src="images/pc10.webp" alt="Image 8" class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105 cursor-pointer gallery-item" data-src="images/pc10.webp">
+                </div>
+                <div class="group relative">
+                    <img src="images/pc11.webp" alt="Image 9" class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105 cursor-pointer gallery-item" data-src="images/pc11.webp">
+                </div>
+            </div>
+
+            <div class="col-span-3 text-center mt-12 mb-4">
+                <h2 class="text-xl sm:text-lg font-bold text-gray-600"> Want to discover more?</h2>
+            </div>
+
+            <div class="col-span-3 text-center">
+                <h3 class="text-md sm:text-md font-semibold text-gray-600">
+                    Visit our <a href="accomodations.html" class="text-blue-800 underline">Accomodations</a> and <a href="amenities.html" class="text-blue-800 underline">Amenities</a>.
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-white font-semibold text-sm">&copy; 2025 Recidencia Del Hamor. All rights reserved.</p>
+            <p class="text-white text-sm mt-2"> Website Developed by Shaina Mae D. Miras </p>
+        </div>
+    </footer>
 
     <!-- Modal -->
     <div id="modal" class="fixed inset-0 hidden z-50 bg-black/30 backdrop-blur-sm justify-center items-center">
@@ -209,6 +152,21 @@
                 link.classList.add("font-bold");
             }
         });
+        
+        window.onload = () => {
+            const heroHeading = document.getElementById('hero-heading');
+            const ctaButton = document.getElementById('cta-button');
+            
+            setTimeout(() => {
+                heroHeading.classList.remove('opacity-0');
+                heroHeading.classList.add('opacity-100');
+            }, 500);
+            
+            setTimeout(() => {
+                ctaButton.classList.remove('opacity-0');
+                ctaButton.classList.add('opacity-100');
+            }, 2500); 
+        };
 
         const galleryItems = document.querySelectorAll('.gallery-item');
         const modal = document.getElementById('modal');
