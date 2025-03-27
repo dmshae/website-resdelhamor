@@ -8,56 +8,59 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="bg-gradient-to-b from-cyan-950 to-slate-500 p-4 shadow-md border-b-2 border-slate-600">
-        <div class="container mx-auto flex justify-between items-center">
-            <!-- Logo and Name -->
-            <div class="flex items-center space-x-3">
-                <img src="images/rdh-logo.webp" alt="Logo" class="h-10 w-auto">
-                <div class="text-lg font-bold text-white">Recidencia Del Hamor</div>
-            </div>
-            <!-- Desktop -->
-            <div class="space-x-8 hidden md:flex">
-                <a href="index.html" class="text-white hover:text-blue-300">Home</a>
-                <a href="accomodations.html" class="text-white hover:text-blue-300">Accomodations</a>
-                <a href="amenities.html" class="text-white hover:text-blue-300">Amenities</a>
-                <a href="booking.html" class="text-blue-300 hover:text-blue-300">Booking</a>
-                <a href="contact.html" class="text-white hover:text-blue-300">Contact</a>
-            </div>
-        
-        <!-- Mobile Navbar (Toggle Button) -->
-        <div class="md:hidden">
-            <button id="mobile-menu-button" class="text-white">
-                ☰
-            </button>
-        </div>
-    </div>
-</nav>
+        <!-- Navbar -->
+            <nav class="bg-gradient-to-b from-cyan-950 to-slate-500 p-4 shadow-md border-b-2 border-slate-600">
+                <div class="container mx-auto flex justify-between items-center">
+                
+                    <!-- Logo and Name -->
+                    <div class="flex items-center space-x-3">
+                        <img src="images/rdh-logo.webp" alt="Logo" class="h-10 w-auto">
+                        <div class="text-lg font-bold text-white">Recidencia Del Hamor</div>
+                    </div>
 
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="md:hidden hidden bg-slate-500 p-6 space-x-2 text-center">
-    <a href="index.html" class="text-white">Home</a>
-    <a href="accomodations.html" class="text-white">Accomodations</a>
-    <a href="amenities.html" class="text-white">Amenities</a>
-    <a href="booking.html" class="text-blue-100">Booking</a>
-    <a href="contact.html" class="text-white">Contact</a>
-</div>
+                    <!-- Desktop -->
+                    <div class="space-x-8 hidden md:flex">
+                        <a href="index.html" class="text-white hover:text-blue-300">Home</a>
+                        <a href="accomodations.html" class="text-white hover:text-blue-300">Accomodations</a>
+                        <a href="amenities.html" class="text-white hover:text-blue-300">Amenities</a>
+                        <a href="booking.html" class="text-white underline hover:text-blue-300">Booking</a>
+                        <a href="contact.html" class="text-white hover:text-blue-300">Contact</a>
+                    </div>
+
+                    <!-- Mobile Navbar (Toggle Button) -->
+                 <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        ☰
+                    </button>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-slate-500 p-6 text-center fixed top-16 right-2 w-48 rounded-lg shadow-lg z-50 text-lg py-4">
+            <a href="index.html" class="text-white block">Home</a>
+            <a href="accomodations.html" class="text-white block">Accomodations</a>
+            <a href="amenities.html" class="text-white block">Amenities</a>
+            <a href="booking.html" class="text-white block underline">Booking</a>
+            <a href="contact.html" class="text-white block">Contact</a>
+        </div>
 
     <!-- Message with Blurred Background -->
-    <section class="relative bg-cover bg-center bg-no-repeat w-full overflow-hidden" style="background-image: url('images/pc1.webp');">
+    <section class="relative bg-cover bg-center bg-no-repeat w-full min-h-screen overflow-hidden" style="background-image: url('images/pc1.webp');">
         <div class="absolute inset-0 bg-black/20 backdrop-blur-xs"></div>
-        <div class="flex items-center justify-center w-full py-18 flex-col md:flex-row">
+        <div class="flex items-center justify-center w-full h-full py-12 flex-col md:flex-row"> 
+        
             <!-- Message Section (Left Side) -->
-            <div class="relative max-w-lg w-full rounded-sm bg-black/30 backdrop-blur-none p-8 shadow-xl z-20 flex flex-col justify-center text-center md:text-left">
-                <h2 class="text-5xl font-bold mb-10 text-white">MAKE YOUR RESERVATION</h2>
+            <div class="relative max-w-lg w-full rounded-sm bg-black/30 backdrop-blur-none p-8 shadow-xl z-20 flex flex-col justify-center text-center md:text-left mx-4 my-4"> 
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">MAKE YOUR RESERVATION</h2>
                 <div class="w-full h-0.5 bg-gray-200"></div>
-                <p class="text-lg font-normal text-white mt-8">Experience the best accommodations and enjoy a relaxing stay with us.</p>
+                <p class="text-lg font-normal text-white mt-4">Experience the best accommodations and enjoy a relaxing stay with us.</p>
             </div>
 
             <!-- Booking Form (Right Side) -->
-            <div class="relative max-w-lg w-full rounded-sm bg-white p-8 shadow-xl z-20 flex flex-col justify-between md:mt-0">
+            <div class="relative max-w-lg w-full rounded-sm bg-white p-8 shadow-xl z-20 flex flex-col justify-between mx-4 my-4"> 
                 <form id="bookingForm" onsubmit="handleSubmit(event)">
-                    <h3 class="text-3xl font-semibold text-center mb-10 text-cyan-800">Booking Form</h3>
+                    <h3 class="text-3xl font-semibold text-center mb-6 text-cyan-800">Booking Form</h3>
                 
                     <!-- First Name and Last Name -->
                     <div class="mb-4 flex flex-col md:flex-row md:space-x-4">
@@ -156,7 +159,7 @@
                     <!-- Submit Button -->
                     <div class="flex justify-center">
                         <button type="submit" class="cursor-pointer rounded-lg bg-cyan-800 px-6 py-2 text-lg mt-5 font-semibold text-white hover:bg-cyan-700">
-                            Book Now
+                            Submit Booking
                         </button>
                     </div>
                 </form>
@@ -409,11 +412,19 @@
         });
 
         // Mobile menu toggle
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenuButton.addEventListener('click', () => {
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const body = document.body;
+
+        menuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
-            });
+
+            if(!mobileMenu.classList.contains('hidden')) {
+                body.classList.add('overflow-hidden');
+            } else {
+                body.classList.remove('overflow-hidden');
+            }
+        });
 
     </script>
         
