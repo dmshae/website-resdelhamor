@@ -45,272 +45,279 @@
             <a href="booking.html" class="text-white block">Booking</a>
             <a href="contact.html" class="text-white block">Contact</a>
         </div>
-
-            <!-- Accommodations Section -->
-            <section class="py-16 bg-gradient-to-b from-gray-300 to-neutral-500">
-                <div class="container mx-auto px-12 sm:px-8 md:px-12 lg:px-12 max-w-screen-sm text-center">
+        
+        <!-- Accommodations Section -->
+         <section class="py-8 bg-gradient-to-t from-gray-400 to-gray-500">
+            <div class="container mx-auto px-6 sm:px-6 md:px-6 lg:px-6 max-w-screen-sm text-center">
+                
                 <!-- Title with background color -->
-                <div class="bg-neutral-600 text-white py-4 mb-12 rounded-md">
-                <h2 class="text-3xl sm:text-4xl font-bold">Our Rooms</h2>
-            </div>
-
-                        <!-- Grid Layout for Rooms -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-            
-                        <!-- Room 1 -->
-                        <div class="room-card bg-white shadow-lg rounded-lg overflow-hidden relative">
-                            <img src="images/pc10.webp" alt="image 1" class="w-full h-64 object-cover rounded-t-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer gallery-item" data-src="images/pc10.webp">
-                            <div class="absolute top-4 right-4 bg-black/50 backdrop-blur-xl text-white font-bold px-4 py-2 rounded-md shadow-lg">
+                <div class="bg-neutral-600 text-white py-4 rounded-md mb-12 mt-5">
+                    <h2 class="text-3xl sm:text-4xl font-bold">Our Rooms</h2>
+                </div>
+                
+                <!-- Grid Layout for Rooms -->
+                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    
+                    <!-- Room 1 -->
+                     <div class="room-card bg-white shadow-lg rounded-lg overflow-hidden relative">
+                        <img src="images/pc10.webp" alt="image 1" class="w-full h-64 object-cover rounded-t-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer gallery-item" data-src="images/pc10.webp">
+                        <div class="absolute top-4 right-4 bg-cyan-800 text-white font-bold px-4 py-2 rounded-md shadow-lg">
                                 P7,500
-                            </div>
-                            <div class="p-6">
-                                <!-- Left side: Title and Icons -->
-                                <div class="space-y-4">
-                                    <div class="w-full text-center">
-                                        <h3 class="text-xl font-bold text-cyan-800">Deluxe Villa</h3>
-                                        <div class="w-full h-0.5 bg-gray-200 mt-2 mx-auto"></div>
-                                    </div>
-                                    <div class="flex items-center space-x-2">
-                                        <i class="fas fa-swimming-pool text-gray-500"></i>
-                                        <span class="text-sm text-gray-500">Pool View</span>
-                                    </div>
-                                    <div class="flex items-center space-x-2">
-                                        <i class="fas fa-chair text-gray-500"></i>
-                                        <span class="text-sm text-gray-500">Balcony/Terrace</span>
-                                    </div>
-                                    <div class="flex items-center space-x-2">
-                                        <i class="fas fa-bed text-gray-500"></i>
-                                        <span class="text-sm text-gray-500">1 Queen Bed</span>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="p-6">
 
-                                <!-- Button -->
-                                <div class="flex justify-between mt-5">
-                                    <button class="text-black bg-gray-200 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:bg-gray-300 hover:scale-105 hover:shadow-lg opacity-100" onclick="openRoomDetailsModal(0)">
-                                        Room Details
-                                    </button>
-                                    <a href="booking.html" class="text-white bg-cyan-800 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg opacity-100 text-center">
-                                        Book Now
-                                    </a>
+                            <!-- Left side: Title and Icons -->
+                             <div class="space-y-4">
+                                <div class="w-full text-center">
+                                    <h3 class="text-xl font-bold text-cyan-800">Deluxe Villa</h3>
+                                    <div class="w-full h-0.5 bg-gray-200 mt-2 mx-auto"></div>
                                 </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-swimming-pool text-gray-500"></i>
+                                    <span class="text-sm text-gray-500">Pool View</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-chair text-gray-500"></i>
+                                    <span class="text-sm text-gray-500">Balcony/Terrace</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-bed text-gray-500"></i>
+                                    <span class="text-sm text-gray-500">1 Queen Bed</span>
+                                </div>
+                             </div>
+                             
+                             <!-- Button -->
+                             <div class="flex justify-between mt-5">
+                                <button class="text-black bg-gray-200 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:bg-gray-300 hover:scale-105 hover:shadow-lg opacity-100" onclick="openRoomDetailsModal(0)">
+                                        Room Details
+                                </button>
+                                <a href="booking.html" class="text-white bg-cyan-800 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg opacity-100 text-center">
+                                        Book Now
+                                </a>
                             </div>
                         </div>
-
-                        <!-- Room 2 -->
-                        <div class="room-card bg-white shadow-lg rounded-lg overflow-hidden relative">
-                            <img src="images/duplex-v2.webp" alt="image 2" class="w-full h-64 object-cover rounded-t-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer gallery-item" data-src="images/duplex-v2.webp">
-                            <div class="absolute top-4 right-4 bg-black/50 backdrop-blur-xl text-white font-bold px-4 py-2 rounded-md shadow-lg">
+                     </div>
+                     
+                     <!-- Room 2 -->
+                    <div class="room-card bg-white shadow-lg rounded-lg overflow-hidden relative">
+                        <img src="images/duplex-v2.webp" alt="image 2" class="w-full h-64 object-cover rounded-t-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer gallery-item" data-src="images/duplex-v2.webp">
+                        <div class="absolute top-4 right-4 bg-cyan-800 text-white font-bold px-4 py-2 rounded-md shadow-lg">
                                 P6,123
-                            </div>
-                            <div class="p-6">
-                                <!-- Left side: Title and Icons -->
-                                <div class="space-y-4">
-                                    <div class="w-full text-center">
-                                        <h3 class="text-xl font-bold text-cyan-800">Duplex Villa</h3>
-                                        <div class="w-full h-0.5 bg-gray-200 mt-2 mx-auto"></div>
-                                    </div>
-                                    <div class="flex items-center space-x-2">
-                                        <i class="fas fa-seedling text-gray-500"></i>
-                                        <span class="text-sm text-gray-500">Garden View</span>
-                                    </div>
-                                    <div class="flex items-center space-x-2">
-                                        <i class="fas fa-chair text-gray-500"></i>
-                                        <span class="text-sm text-gray-500">Balcony/Terrace</span>
-                                    </div>
-                                    <div class="flex items-center space-x-2">
-                                        <i class="fas fa-bed text-gray-500"></i>
-                                        <span class="text-sm text-gray-500">1 Queen Bed</span>
-                                    </div>
-                                </div>
-
-                                <!-- Button -->
-                                <div class="flex justify-between mt-5">
-                                    <button class="text-black bg-gray-200 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:bg-gray-300 hover:scale-105 hover:shadow-lg opacity-100" onclick="openRoomDetailsModal(1)">
-                                        Room Details
-                                    </button>
-                                    <a href="booking.html" class="text-white bg-cyan-800 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg opacity-100 text-center">
-                                        Book Now
-                                    </a>
-                                </div>
-                            </div>
                         </div>
-
-                        <!-- Room 3 -->
-                        <div class="room-card bg-white shadow-lg rounded-lg overflow-hidden relative">
-                            <img src="images/duplex-v3.webp" alt="image 3" class="w-full h-64 object-cover rounded-t-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer gallery-item" data-src="images/duplex-v3.webp">
-                            <div class="absolute top-4 right-4 bg-black/50 backdrop-blur-xl text-white font-bold px-4 py-2 rounded-md shadow-lg">
-                                P7,423
-                            </div>
-                            <div class="p-6">
-                                <!-- Left side: Title and Icons -->
-                                <div class="space-y-4">
-                                    <div class="w-full text-center">
-                                        <h3 class="text-xl font-bold text-cyan-800">Duplex Villa Private Pool</h3>
-                                        <div class="w-full h-0.5 bg-gray-200 mt-2 mx-auto"></div>
-                                    </div>
-                                    <div class="flex items-center space-x-2">
-                                        <i class="fas fa-swimming-pool text-gray-500"></i>
-                                        <span class="text-sm text-gray-500">Private Pool</span>
-                                    </div>
-                                    <div class="flex items-center space-x-2">
-                                        <i class="fas fa-chair text-gray-500"></i>
-                                        <span class="text-sm text-gray-500">Balcony/Terrace</span>
-                                    </div>
-                                    <div class="flex items-center space-x-2">
-                                        <i class="fas fa-bed text-gray-500"></i>
-                                        <span class="text-sm text-gray-500">1 Queen Bed</span>
-                                    </div>
+                        <div class="p-6">
+                            
+                            <!-- Left side: Title and Icons -->
+                            <div class="space-y-4">
+                                <div class="w-full text-center">
+                                    <h3 class="text-xl font-bold text-cyan-800">Duplex Villa</h3>
+                                    <div class="w-full h-0.5 bg-gray-200 mt-2 mx-auto"></div>
                                 </div>
-
-                                <!-- Button -->
-                                <div class="flex justify-between mt-5">
-                                    <button class="text-black bg-gray-200 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:bg-gray-300 hover:scale-105 hover:shadow-lg opacity-100" onclick="openRoomDetailsModal(2)">
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-seedling text-gray-500"></i>
+                                    <span class="text-sm text-gray-500">Garden View</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-chair text-gray-500"></i>
+                                    <span class="text-sm text-gray-500">Balcony/Terrace</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-bed text-gray-500"></i>
+                                    <span class="text-sm text-gray-500">1 Queen Bed</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Button -->
+                             <div class="flex justify-between mt-5">
+                                <button class="text-black bg-gray-200 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:bg-gray-300 hover:scale-105 hover:shadow-lg opacity-100" onclick="openRoomDetailsModal(1)">
                                         Room Details
-                                    </button>
-                                    <a href="booking.html" class="text-white bg-cyan-800 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg opacity-100 text-center">
+                                </button>
+                                <a href="booking.html" class="text-white bg-cyan-800 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg opacity-100 text-center">
                                         Book Now
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Room 4 -->
-                        <div class="room-card bg-white shadow-lg rounded-lg overflow-hidden relative">
-                            <img src="images/panoramic-duplex.webp" alt="image 4" class="w-full h-64 object-cover rounded-t-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer gallery-item" data-src="images/panoramic-duplex.webp">
-                            <div class="absolute top-4 right-4 bg-black/50 backdrop-blur-xl text-white font-bold px-4 py-2 rounded-md shadow-lg">
-                                P7,500
-                            </div>
-                            <div class="p-6">
-                                <!-- Left side: Title and Icons -->
-                                <div class="space-y-4">
-                                    <div class="w-full text-center">
-                                        <h3 class="text-xl font-bold text-cyan-800">Panoramic Duplex Villa with Pool</h3>
-                                        <div class="w-full h-0.5 bg-gray-200 mt-2 mx-auto"></div>
-                                    </div>
-                                    <div class="flex items-center space-x-2">
-                                        <i class="fas fa-swimming-pool text-gray-500"></i>
-                                        <span class="text-sm text-gray-500">Pool View</span>
-                                    </div>
-                                    <div class="flex items-center space-x-2">
-                                        <i class="fas fa-chair text-gray-500"></i>
-                                        <span class="text-sm text-gray-500">Balcony/Terrace</span>
-                                    </div>
-                                    <div class="flex items-center space-x-2">
-                                        <i class="fas fa-bed text-gray-500"></i>
-                                        <span class="text-sm text-gray-500">1 Queen Bed</span>
-                                    </div>
-                                </div>
-
-                                <!-- Button -->
-                                <div class="flex justify-between mt-5">
-                                    <button class="text-black bg-gray-200 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:bg-gray-300 hover:scale-105 hover:shadow-lg opacity-100" onclick="openRoomDetailsModal(3)">
-                                        Room Details
-                                    </button>
-                                    <a href="booking.html" class="text-white bg-cyan-800 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg opacity-100 text-center">
-                                        Book Now
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Room 5 -->
-                        <div class="room-card bg-white shadow-lg rounded-lg overflow-hidden relative">
-                            <img src="images/standard-villa.webp" alt="image 5" class="w-full h-64 object-cover rounded-t-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer gallery-item" data-src="images/standard-villa.webp">
-                            <div class="absolute top-4 right-4 bg-black/50 backdrop-blur-xl text-white font-bold px-4 py-2 rounded-md shadow-lg">
-                                P8,500
-                            </div>
-                            <div class="p-6">
-                                <!-- Left side: Title and Icons -->
-                                <div class="space-y-4">
-                                    <div class="w-full text-center">
-                                        <h3 class="text-xl font-bold text-cyan-800">Standard Villa</h3>
-                                        <div class="w-full h-0.5 bg-gray-200 mt-2 mx-auto"></div>
-                                    </div>
-                                    <div class="flex items-center space-x-2">
-                                        <i class="fas fa-seedling text-gray-500"></i>
-                                        <span class="text-sm text-gray-500">Garden View</span>
-                                    </div>
-                                    <div class="flex items-center space-x-2">
-                                        <i class="fas fa-chair text-gray-500"></i>
-                                        <span class="text-sm text-gray-500">Balcony/Terrace</span>
-                                    </div>
-                                    <div class="flex items-center space-x-2">
-                                        <i class="fas fa-bed text-gray-500"></i>
-                                        <span class="text-sm text-gray-500">1 Queen Bed</span>
-                                    </div>
-                                </div>
-
-                                <!-- Button -->
-                                <div class="flex justify-between mt-5">
-                                    <button class="text-black bg-gray-200 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:bg-gray-300 hover:scale-105 hover:shadow-lg opacity-100" onclick="openRoomDetailsModal(4)">
-                                        Room Details
-                                    </button>
-                                    <a href="booking.html" class="text-white bg-cyan-800 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg opacity-100 text-center">
-                                        Book Now
-                                    </a>
-                                </div>
-                            </div>  
-                        </div>
-
-                        <!-- Room 6 -->
-                        <div class="room-card bg-white shadow-lg rounded-lg overflow-hidden relative">
-                            <img src="images/pc11.webp" alt="image 6" class="w-full h-64 object-cover rounded-t-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer gallery-item" data-src="images/pc11.webp">
-                            <div class="absolute top-4 right-4 bg-black/50 backdrop-blur-xl text-white font-bold px-4 py-2 rounded-md shadow-lg">
-                                P9,000
-                            </div>
-                            <div class="p-6">
-                                <!-- Left side: Title and Icons -->
-                                <div class="space-y-4">
-                                    <div class="w-full text-center">
-                                        <h3 class="text-xl font-bold text-cyan-800">Suite Room</h3>
-                                        <div class="w-full h-0.5 bg-gray-200 mt-2 mx-auto"></div>
-                                    </div>
-                                    <div class="flex items-center space-x-2">
-                                        <i class="fas fa-seedling text-gray-500"></i>
-                                        <span class="text-sm text-gray-500">Garden View</span>
-                                    </div>
-                                    <div class="flex items-center space-x-2">
-                                        <i class="fas fa-chair text-gray-500"></i>
-                                        <span class="text-sm text-gray-500">Balcony/Terrace</span>
-                                    </div>
-                                    <div class="flex items-center space-x-2">
-                                        <i class="fas fa-bed text-gray-500"></i>
-                                        <span class="text-sm text-gray-500">2 Queen Beds</span>
-                                    </div>
-                                </div>
-
-                                <!-- Button -->
-                                <div class="flex justify-between mt-5">
-                                    <button class="text-black bg-gray-200 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:bg-gray-300 hover:scale-105 hover:shadow-lg opacity-100" onclick="openRoomDetailsModal(5)">
-                                        Room Details
-                                    </button>
-                                    <a href="booking.html" class="text-white bg-cyan-800 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg opacity-100 text-center">
-                                        Book Now
-                                    </a>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <!-- Footer Section -->
-            <footer class="bg-gray-800 text-white py-8">
-                <div class="container mx-auto px-4 text-center">
-                    <p class="text-white font-semibold text-sm">&copy; 2025 Recidencia Del Hamor. All rights reserved.</p>
-                    <p class="text-white text-sm mt-2"> Website Developed by Shaina Mae D. Miras </p>
-                </div>
-            </footer>
-            
-            <!-- Modal for Image Viewing -->
-            <div id="image-modal" class="fixed inset-0 hidden z-50 bg-black/30 backdrop-blur-xs justify-center items-center">
-                <div class="relative p-4 flex justify-center items-center max-w-[95vw] max-h-[95vh]">
-                    <div class="bg-white p-6 rounded-lg max-w-3xl z-40">
-                        <img id="image-modal-img" src="" alt="Enlarged Image" class="object-contain max-w-full max-h-full rounded">
-                        <button id="close-image-modal" class="absolute top-2 right-4 bg-black/30 backdrop-blur-lg hover:text-gray-700 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-70 focus:outline-none cursor-pointer">×</button>
+                    
+                    <!-- Room 3 -->
+                    <div class="room-card bg-white shadow-lg rounded-lg overflow-hidden relative">
+                        <img src="images/duplex-v3.webp" alt="image 3" class="w-full h-64 object-cover rounded-t-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer gallery-item" data-src="images/duplex-v3.webp">
+                        <div class="absolute top-4 right-4 bg-cyan-800 text-white font-bold px-4 py-2 rounded-md shadow-lg">
+                            P7,423
+                        </div>
+                        <div class="p-6">
+                            
+                            <!-- Left side: Title and Icons -->
+                            <div class="space-y-4">
+                                <div class="w-full text-center">
+                                    <h3 class="text-xl font-bold text-cyan-800">Duplex Villa Private Pool</h3>
+                                    <div class="w-full h-0.5 bg-gray-200 mt-2 mx-auto"></div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-swimming-pool text-gray-500"></i>
+                                    <span class="text-sm text-gray-500">Private Pool</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-chair text-gray-500"></i>
+                                    <span class="text-sm text-gray-500">Balcony/Terrace</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-bed text-gray-500"></i>
+                                    <span class="text-sm text-gray-500">1 Queen Bed</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Button -->
+                            <div class="flex justify-between mt-5">
+                                <button class="text-black bg-gray-200 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:bg-gray-300 hover:scale-105 hover:shadow-lg opacity-100" onclick="openRoomDetailsModal(2)">
+                                        Room Details
+                                </button>
+                                <a href="booking.html" class="text-white bg-cyan-800 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg opacity-100 text-center">
+                                        Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Room 4 -->
+                    <div class="room-card bg-white shadow-lg rounded-lg overflow-hidden relative">
+                        <img src="images/panoramic-duplex.webp" alt="image 4" class="w-full h-64 object-cover rounded-t-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer gallery-item" data-src="images/panoramic-duplex.webp">
+                        <div class="absolute top-4 right-4 bg-cyan-800 text-white font-bold px-4 py-2 rounded-md shadow-lg">
+                                P7,500
+                        </div>
+                        <div class="p-6">
+                            
+                            <!-- Left side: Title and Icons -->
+                            <div class="space-y-4">
+                                <div class="w-full text-center">
+                                    <h3 class="text-xl font-bold text-cyan-800">Panoramic Duplex Villa with Pool</h3>
+                                    <div class="w-full h-0.5 bg-gray-200 mt-2 mx-auto"></div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-swimming-pool text-gray-500"></i>
+                                    <span class="text-sm text-gray-500">Pool View</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-chair text-gray-500"></i>
+                                    <span class="text-sm text-gray-500">Balcony/Terrace</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-bed text-gray-500"></i>
+                                    <span class="text-sm text-gray-500">1 Queen Bed</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Button -->
+                            <div class="flex justify-between mt-5">
+                                <button class="text-black bg-gray-200 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:bg-gray-300 hover:scale-105 hover:shadow-lg opacity-100" onclick="openRoomDetailsModal(3)">
+                                        Room Details
+                                </button>
+                                <a href="booking.html" class="text-white bg-cyan-800 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg opacity-100 text-center">
+                                        Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Room 5 -->
+                    <div class="room-card bg-white shadow-lg rounded-lg overflow-hidden relative">
+                        <img src="images/standard-villa.webp" alt="image 5" class="w-full h-64 object-cover rounded-t-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer gallery-item" data-src="images/standard-villa.webp">
+                        <div class="absolute top-4 right-4 bg-cyan-800 text-white font-bold px-4 py-2 rounded-md shadow-lg">
+                                P8,500
+                        </div>
+                        <div class="p-6">
+                            
+                            <!-- Left side: Title and Icons -->
+                            <div class="space-y-4">
+                                <div class="w-full text-center">
+                                    <h3 class="text-xl font-bold text-cyan-800">Standard Villa</h3>
+                                    <div class="w-full h-0.5 bg-gray-200 mt-2 mx-auto"></div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-seedling text-gray-500"></i>
+                                    <span class="text-sm text-gray-500">Garden View</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-chair text-gray-500"></i>
+                                    <span class="text-sm text-gray-500">Balcony/Terrace</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-bed text-gray-500"></i>
+                                    <span class="text-sm text-gray-500">1 Queen Bed</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Button -->
+                            <div class="flex justify-between mt-5">
+                                <button class="text-black bg-gray-200 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:bg-gray-300 hover:scale-105 hover:shadow-lg opacity-100" onclick="openRoomDetailsModal(4)">
+                                        Room Details
+                                </button>
+                                <a href="booking.html" class="text-white bg-cyan-800 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg opacity-100 text-center">
+                                        Book Now
+                                </a>
+                            </div>
+                        </div>  
+                    </div>
+                    
+                    <!-- Room 6 -->
+                    <div class="room-card bg-white shadow-lg rounded-lg overflow-hidden relative">
+                        <img src="images/pc11.webp" alt="image 6" class="w-full h-64 object-cover rounded-t-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer gallery-item" data-src="images/pc11.webp">
+                        <div class="absolute top-4 right-4 bg-cyan-800 text-white font-bold px-4 py-2 rounded-md shadow-lg">
+                                P9,000
+                        </div>
+                        <div class="p-6">
+                            
+                            <!-- Left side: Title and Icons -->
+                            <div class="space-y-4">
+                                <div class="w-full text-center">
+                                    <h3 class="text-xl font-bold text-cyan-800">Suite Room</h3>
+                                    <div class="w-full h-0.5 bg-gray-200 mt-2 mx-auto"></div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-seedling text-gray-500"></i>
+                                    <span class="text-sm text-gray-500">Garden View</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-chair text-gray-500"></i>
+                                    <span class="text-sm text-gray-500">Balcony/Terrace</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-bed text-gray-500"></i>
+                                    <span class="text-sm text-gray-500">2 Queen Beds</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Button -->
+                            <div class="flex justify-between mt-5">
+                                <button class="text-black bg-gray-200 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:bg-gray-300 hover:scale-105 hover:shadow-lg opacity-100" onclick="openRoomDetailsModal(5)">
+                                        Room Details
+                                </button>
+                                <a href="booking.html" class="text-white bg-cyan-800 px-4 py-2 rounded-md cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg opacity-100 text-center">
+                                        Book Now
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+        
+        <!-- Footer Section -->
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="container mx-auto px-4 text-center">
+                <p class="text-white font-semibold text-sm">&copy; 2025 Recidencia Del Hamor. All rights reserved.</p>
+                <p class="text-white text-sm mt-2"> Website Developed by Shaina Mae D. Miras </p>
+            </div>
+        </footer>
+        
+        <!-- Modal for Image Viewing -->
+        <div id="image-modal" class="fixed inset-0 hidden z-50 bg-black/30 backdrop-blur-xs justify-center items-center">
+            <div class="relative p-4 flex justify-center items-center max-w-[95vw] max-h-[95vh]">
+                <div class="bg-white p-6 rounded-lg max-w-3xl z-40">
+                    <img id="image-modal-img" src="" alt="Enlarged Image" class="object-contain max-w-full max-h-full rounded">
+                    <button id="close-image-modal" class="absolute top-2 right-4 bg-black/30 backdrop-blur-lg hover:text-gray-700 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-70 focus:outline-none cursor-pointer">×</button>
+                </div>
+            </div>
+        </div>
 
         <!-- Modal for Room Details -->
         <div id="room-details-modal" class="fixed inset-0 hidden z-50 bg-black/30 backdrop-blur-xs justify-center items-center">
@@ -327,7 +334,6 @@
                 </div>
             </div>
         </div>
-
 
 
         <script>
