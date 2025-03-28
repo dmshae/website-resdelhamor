@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Residencia Del Hamor | Amenities</title>
     <link href="./output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -47,7 +48,14 @@
 
         <!-- Hero Section with Carousel -->
         <section class="relative w-full h-[60vh] bg-cover bg-center">
-            <div class="absolute inset-0 bg-gradient-to-t from-cyan-700 to-slate-500"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-200 to-slate-500"></div>
+            
+            <!-- Text in front -->
+             <div class="absolute z-20 text-center w-full top-1/2 transform -translate-y-1/2">
+                <h3 class="text-4xl font-bold text-white" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">
+                    Experience the Ultimate Relaxation
+                </h3>
+             </div>
         
             <!-- Carousel Container -->
             <div class="absolute inset-0 z-10 flex justify-center items-center">
@@ -72,70 +80,124 @@
                     </div>
                 </div>
             </div>
-
-            <div class="relative z-20 text-center text-white pt-24">
-                <h1 class="text-4xl font-bold mt-23"
-                    style="text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);">
-                        Experience the Ultimate Relaxation
-                </h1>
-            </div>
         </section>
-
-        <div class="bg-gradient-to-t from-slate-300 to-slate-200 py-16 px-4">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-bold text-cyan-800 mb-4">Why Choose Us?</h2>
-                <p class="text-lg text-gray-800">Discover luxurious amenities and thrilling activities at our resort, offering everything you need for a perfect getaway!</p>
-            </div>
-        </div>
         
         <!-- Amenities Section -->
-        <section id="amenities-section" class="py-16 px-4">
+        <section id="amenities-section" class="py-16 px-4 bg-gradient-to-b from-gray-200 to-slate-300">
             <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl font-bold text-cyan-800 text-center mb-8">Our Amenities</h2>
+                <h2 class="text-3xl font-bold text-cyan-800 text-center mb-12">Our Amenities</h2>
                 
                 <!-- Grid Container -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="amenities-content">
-                    
-                    <!-- Box 1 -->
-                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg">
-                        <img src="images/am1.webp" alt="Spa Image" class="w-full h-48 object-cover mb-4 rounded-lg">
-                        <h3 class="text-2xl font-semibold text-gray-800 mb-4"> SPA </h3>
-                        <p class="text-gray-700 text-justify">Experience the tranquility of our luxurious spa. Relax with a variety of treatments designed to rejuvenate your body and mind.</p>
-                    </div>
 
+                    <!-- Box 1 -->
+                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg flex flex-col items-center justify-start text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <h3 class="text-2xl font-bold text-cyan-800 mb-6"> POOL </h3>
+                        <img src="images/pc2.webp" alt="Amenities 1" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    </div>
+                    
                     <!-- Box 2 -->
-                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg">
-                        <img src="path/to/pool-image.jpg" alt="Pool Image" class="w-full h-48 object-cover mb-4 rounded-lg">
-                        <h3 class="text-2xl font-semibold text-gray-800 mb-4"> POOL </h3>
-                        <p class="text-gray-700 text-justify">The pool offers a perfect escape for guests, featuring crystal-clear water surrounded by lush landscapes. Whether you want to relax by the water or take a refreshing swim, it's the ideal spot to enjoy the serene surroundings.</p>
+                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg flex flex-col items-center justify-start text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <h3 class="text-2xl font-bold text-cyan-800 mb-6"> SPA </h3>
+                        <img src="images/spa.webp" alt="Amenities 2" class="w-full h-48 object-cover mb-4 rounded-lg">
                     </div>
 
                     <!-- Box 3 -->
-                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg">
-                        <img src="path/to/restaurant-image.jpg" alt="Restaurant Image" class="w-full h-48 object-cover mb-4 rounded-lg">
-                        <h3 class="text-2xl font-semibold text-gray-800 mb-4"> RESTAURANT </h3>
-                        <p class="text-gray-700 text-justify">Our restaurant offers an exquisite dining experience with a diverse menu prepared by skilled chefs. Enjoy a variety of fresh, local, and international dishes in an elegant setting that promises unforgettable flavors.</p>
+                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg flex flex-col items-center justify-start text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <h3 class="text-2xl font-bold text-cyan-800 mb-6"> RESTAURANT </h3>
+                        <img src="images/am5.webp" alt="Amenities 3" class="w-full h-48 object-cover mb-4 rounded-lg">
                     </div>
 
                     <!-- Box 4 -->
-                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg">
-                        <img src="path/to/coffee-shop-image.jpg" alt="Coffee Shop Image" class="w-full h-48 object-cover mb-4 rounded-lg">
-                        <h3 class="text-2xl font-semibold text-gray-800 mb-4"> COFFEE SHOP </h3>
-                        <p class="text-gray-700 text-justify">The coffee shop is a cozy retreat where you can enjoy freshly brewed coffee, specialty teas, and light snacks. With beautiful views and a relaxed atmosphere, it's the perfect place to unwind and enjoy your favorite beverage.</p>
+                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg flex flex-col items-center justify-start text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <h3 class="text-2xl font-bold text-cyan-800 mb-6"> COFFEE SHOP </h3>
+                        <img src="images/coffee.webp" alt="Amenities 4" class="w-full h-48 object-cover mb-4 rounded-lg">
                     </div>
 
                     <!-- Box 5 -->
-                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg">
-                        <img src="path/to/garden-image.jpg" alt="Garden Image" class="w-full h-48 object-cover mb-4 rounded-lg">
-                        <h3 class="text-2xl font-semibold text-gray-800 mb-4"> GARDEN </h3>
-                        <p class="text-gray-700 text-justify">Our garden provides a peaceful environment with stunning landscapes and vibrant flora. It’s the perfect place for guests to enjoy nature, take leisurely strolls, or simply relax and breathe in the fresh air.</p>
+                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg flex flex-col items-center justify-start text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <h3 class="text-2xl font-bold text-cyan-800 mb-6"> GARDEN </h3>
+                        <img src="images/am1.webp" alt="Amenities 5" class="w-full h-48 object-cover mb-4 rounded-lg">
                     </div>
 
                     <!-- Box 6 -->
-                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg">
-                        <img src="path/to/massage-image.jpg" alt="Massage Image" class="w-full h-48 object-cover mb-4 rounded-lg">
-                        <h3 class="text-2xl font-semibold text-gray-800 mb-4"> MASSAGE </h3>
-                        <p class="text-gray-700 text-justify">The massage services offer ultimate relaxation with a variety of treatments tailored to rejuvenate the body and mind. In a tranquil environment, skilled therapists help ease stress and provide a calming, restorative experience.</p>
+                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg flex flex-col items-center justify-start text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <h3 class="text-2xl font-bold text-cyan-800 mb-6"> MASSAGE </h3>
+                        <img src="images/massage.webp" alt="Amenities 6" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services-section" class="py-16 px-4 bg-gradient-to-t from-gray-200 to-slate-300">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-cyan-800 text-center mb-12">Our Services</h2>
+                
+                <!-- Grid Container -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="services-content">
+
+                    <!-- Box 1 -->
+                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg flex flex-col items-center justify-start text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <i class="fas fa-wifi text-4xl text-cyan-800 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4"> Wi-Fi in Public Areas </h3>
+                        <p class="text-gray-700 text-justify">Wi-Fi is available in public areas, allowing guests to easily access the internet and stay connected with loved ones or catch up on work.</p>
+                    </div>
+
+                    <!-- Box 2 -->
+                     <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg flex flex-col items-center justify-start text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <i class="fas fa-utensils text-4xl text-cyan-800 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4"> Breakfast </h3>
+                        <p class="text-gray-700 text-justify">Start your day off right with a delicious continental breakfast, served fresh every morning.</p>
+                    </div>
+
+                    <!-- Box 3 -->
+                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg flex flex-col items-center justify-start text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <i class="fas fa-plane-arrival text-4xl text-cyan-800 mb-4"></i> 
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4"> Airport Transfer </h3>
+                        <p class="text-gray-700 text-justify">Our hotel provides airport transfer services, making your journey from the airport to our doorstep seamless and stress-free.</p>
+                    </div>
+                    
+                    <!-- Box 4 -->
+                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg flex flex-col items-center justify-start text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <i class="fas fa-concierge-bell text-4xl text-cyan-800 mb-4"></i> 
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4"> Concierge </h3>
+                        <p class="text-gray-700 text-justify">Our concierge service is here to assist you with your needs, from booking reservations to providing local recommendations.</p>
+                    </div>
+
+                    <!-- Box 5 -->
+                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg flex flex-col items-center justify-start text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <i class="fas fa-broom text-4xl text-cyan-800 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Daily Housekeeping</h3>
+                        <p class="text-gray-700 text-justify">Enjoy a spotless stay with daily housekeeping services, ensuring your comfort and cleanliness throughout your visit.</p>
+                    </div>
+
+                    <!-- Box 6 -->
+                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg flex flex-col items-center justify-start text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <i class="fas fa-suitcase text-4xl text-cyan-800 mb-4"></i> 
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4"> Luggage Storage </h3>
+                        <p class="text-gray-700 text-justify">Store your luggage securely and enjoy the freedom to explore without the hassle of carrying your bags around.</p>
+                    </div>
+
+                    <!-- Box 7 -->
+                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg flex flex-col items-center justify-start text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <i class="fas fa-tshirt text-4xl text-cyan-800 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4"> Ironing Services </h3>
+                        <p class="text-gray-700 text-justify">Keep your clothes wrinkle-free with our convenient ironing services, available for all your clothing needs.</p>
+                    </div>
+
+                    <!-- Box 8 -->
+                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg flex flex-col items-center justify-start text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <i class="fas fa-smoking-ban text-4xl text-cyan-800 mb-4"></i> 
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4"> Smoke-free Property </h3>
+                        <p class="text-gray-700 text-justify">Enjoy a clean and fresh atmosphere with our smoke-free property, ensuring a healthy and pleasant environment for all guests.</p>
+                    </div>
+
+                    <!-- Box 9 -->
+                    <div class="bg-gradient-to-t from-gray-300 to-slate-200 p-6 shadow-lg rounded-lg flex flex-col items-center justify-start text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <i class="fas fa-wheelchair text-4xl text-cyan-800 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4"> Facilities for Disabled Guests </h3>
+                        <p class="text-gray-700 text-justify">We provide accessible facilities and services to ensure that all our guests can enjoy a comfortable and convenient stay.</p>
                     </div>
                 </div>
             </div>
